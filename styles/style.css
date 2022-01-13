@@ -4,9 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
+
+
 /*-----------------------------------
      Common Styles or Utilities 
 ------------------------------------*/
+
+
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -32,7 +36,11 @@ hr{
     margin-bottom: 27px;
 }
 
-/* TOP PLAYERS STYLE */
+
+/* ======================
+    TOP PLAYERS STYLE
+========================= */
+
 
 .top-players{
     margin-bottom: 30px;
@@ -65,7 +73,11 @@ hr{
     font-size: 18px;
 }
 
-/* TOP BLOG STYLES */
+
+/* ===========================
+    TOP BLOG STYLES 
+==============================*/
+
 
 .blogs{
     display: grid;
@@ -101,7 +113,11 @@ hr{
     font-size: 16px;
 }
 
-/* COURSE STYLES */
+
+/* ======================
+    COURSE STYLES 
+========================*/
+
 
 .courses{
     display: grid;
@@ -130,4 +146,43 @@ hr{
 .fa-star.empty{
     color: #AEAEAE;
     opacity: 0.75;
+}
+
+
+/* --------------------------
+     MEDIA QUERIES
+----------------------------- */
+
+
+/* Mobile Devices */
+
+
+@media only screen and (max-width: 688px) {
+    
+    .container{
+        width: 100%;
+    }
+
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player, .blog{
+        flex-direction: column;
+    }
+}
+
+
+/* Tablet Devices */
+
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    
+    .container{
+        width: 100%;
+    }
+    
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
