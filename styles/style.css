@@ -13,6 +13,8 @@
 
 
 body{
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;;
 }
@@ -34,6 +36,51 @@ main{
 hr{
     border: 1px solid #D1D1D1;
     margin-bottom: 27px;
+}
+
+
+/* ===============
+    Nav bar 
+==================*/
+
+
+nav {
+    background: #562EFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.icon-area {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin-left: 209px;
+}
+
+.icon-area img {
+    width: 40.42px;
+    height: 51px;
+    margin-top: 12px;
+}
+
+.profile-area {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-right: 192px;
+}
+
+.profile-area img {
+    width: 51px;
+    height: 51px;
 }
 
 
